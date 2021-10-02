@@ -8,6 +8,7 @@ var path= require('path');
 var spawn = require('child_process').spawn;
 var fs = require('fs');
 var https = require('https');
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 //app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 const server = require('http').createServer(//{
@@ -222,6 +223,10 @@ const config = {
   http: {
     port: 8000,
     allow_origin: '*'
+  },
+  trans:{
+	ffmpeg: ffmpegPath,
+
   }
 };
 
