@@ -298,7 +298,7 @@ function requestMedia(){
 	    }
 	};
 	console.log(constraints);
-	navigator.mediaDevices.getUserMedia({audio:true,video:true}).then(function(stream) {
+	navigator.mediaDevices.getUserMedia(constraints).then(function(stream) {
 		//let supported = navigator.mediaDevices.getSupportedConstraints();
 		//console.log(supported);
 		video_show(stream);//only show locally, not remotely
