@@ -185,7 +185,7 @@ var oo=document.getElementById("checkbox_Reconection");
 	}
 
 	function connect_server(){
-		navigator.getUserMedia = (navigator.mediaDevices.getUserMedia ||
+		navigator.mediaDevices.getUserMedia = (navigator.mediaDevices.getUserMedia ||
                           navigator.mediaDevices.mozGetUserMedia ||
                           navigator.mediaDevices.msGetUserMedia ||
                           navigator.mediaDevices.webkitGetUserMedia);
